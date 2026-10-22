@@ -89,3 +89,4 @@ C:\Users\Patrycja\cursor\minutnik-zadanie3-1\minutnik\obj\Debug\net10.0\refint\m
 C:\Users\Patrycja\cursor\minutnik-zadanie3-1\minutnik\obj\Debug\net10.0\minutnik.pdb
 C:\Users\Patrycja\cursor\minutnik-zadanie3-1\minutnik\obj\Debug\net10.0\minutnik.genruntimeconfig.cache
 C:\Users\Patrycja\cursor\minutnik-zadanie3-1\minutnik\obj\Debug\net10.0\ref\minutnik.dll
+C:\Users\Patrycja\cursor\minutnik-zadanie3-1\minutnik\obj\Debug\net10.0\minutnik.sourcelink.json
