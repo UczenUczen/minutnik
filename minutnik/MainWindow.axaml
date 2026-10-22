@@ -110,6 +110,7 @@
                                FontFamily="Consolas, Cascadia Code, monospace"
                                Foreground="#38BDF8"
                                HorizontalAlignment="Center"/>
+                               <ListBox Name="HistoryList" />
                 </StackPanel>
             </Grid>
         </Border>

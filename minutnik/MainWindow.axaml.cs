@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Media;
@@ -19,6 +20,7 @@ public partial class MainWindow : Window
     private bool _isRunning = false;
     private int _remainingSeconds = 25 * 60;
     private int _completedCycles = 0;
+    private readonly List<string> _history = new();
 
     public MainWindow()
     {
@@ -80,6 +82,9 @@ public partial class MainWindow : Window
             // Break finished: full cycle finished!
             _completedCycles++;
             UpdateCycleDisplay();
+
+            _history.Add($"{DateTime.Now:HH:mm} — cykl {_completedCycles}");
+            HistoryList.ItemsSource = _history.ToArray();
 
             _currentPhase = TimerPhase.Work;
             int workMinutes = Math.Max(1, (int)(WorkDurationNumeric.Value ?? 25));
